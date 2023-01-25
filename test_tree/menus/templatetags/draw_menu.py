@@ -17,7 +17,7 @@ RawHTML = str  # generated html code
 
 
 @register.inclusion_tag('draw_menu.html')
-def drow_menu(splited_menu: list[str]) -> TagHTML:
+def draw_menu(splited_menu: list[str]) -> TagHTML:
     """The main templatetag function, preparing tree menu by making request
     to and draw via raw html."""
     if splited_menu == ['all']:
